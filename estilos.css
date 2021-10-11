@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #202125;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto/Roboto-Light.ttf);
+}
+
+.header {
+  margin: 5px;
+  background: #3c4043;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.image-header {
+  border-radius: 50%;
+}
+
+.name-header {
+  padding-left: 7px;
+  color: white;
+
+  font-family: Roboto;
+  font-size: 12px;
+}
+
+.container {
+  margin: 5px;
+  background: #202125;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5px;
+}
+
+.share-windwos {
+  background: #919191;
+}
+
+.windwos-avatares {
+  gap: 7px;
+  background: #202125;
+  min-width: 300px;
+  min-height: 200px;
+
+  display: grid;
+  grid-template-rows: auto auto;
+  /* 
+  align-items: center;
+  justify-content: center; */
+}
+
+.avatar-image {
+  border-radius: 3%;
+  background: #3c4043;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.footer {
+  margin: 5px;
+  color: white;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  background: #202125;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+}
+
+.btn {
+  background: #3c4043;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-microphone {
+  background: #e84332;
+}
+
+.button-camera {
+  background: #e84332;
+}
+
+.button-call {
+  background: #e84332;
+  border-radius: 38%;
+  width: 40px;
+}
