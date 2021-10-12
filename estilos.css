@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -16,11 +17,11 @@ body {
 
 @font-face {
   font-family: Roboto;
-  src: url(Roboto/Roboto-Light.ttf);
+  src: url(access/Fonts/Roboto/Roboto-Medium.ttf);
 }
 
 .header {
-  margin: 5px;
+  margin: 7px;
   background: #3c4043;
   padding: 5px;
   display: flex;
@@ -41,18 +42,19 @@ body {
 }
 
 .container {
-  margin: 5px;
+  margin: 7px;
   background: #202125;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 5px;
 }
 
-.share-windwos {
+.share-windows {
   background: #919191;
 }
 
-.windwos-avatares {
+.windows-avatars {
+  color: white;
   gap: 7px;
   background: #202125;
   min-width: 300px;
@@ -60,9 +62,34 @@ body {
 
   display: grid;
   grid-template-rows: auto auto;
-  /* 
+}
+
+.elements-avatars {
+  font-size: 12px;
+  font-family: Roboto;
+  position: absolute;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center; */
+}
+
+.button-microphone-1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #53585c;
+  right: 16px;
+  bottom: 280px;
+}
+
+.name-avatar-1 {
+  right: 191px;
+  top: 287px;
+}
+
+.name-avatar-2 {
+  right: 278px;
+  bottom: 69px;
 }
 
 .avatar-image {
@@ -81,11 +108,11 @@ body {
 }
 
 .footer {
-  margin: 5px;
+  padding: 5px;
+  margin: 7px;
   color: white;
   font-family: Roboto;
   font-size: 14px;
-  font-weight: bold;
   background: #202125;
   display: flex;
   align-items: flex-start;
@@ -94,8 +121,7 @@ body {
 
 .buttons {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 5px;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .btn {
@@ -109,7 +135,7 @@ body {
   justify-content: center;
 }
 
-.button-microphone {
+.button-microphone-2 {
   background: #e84332;
 }
 
@@ -121,4 +147,31 @@ body {
   background: #e84332;
   border-radius: 38%;
   width: 40px;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.elements-footer {
+  width: 15px;
+  height: 15px;
+  font-size: 9px;
+  background: #3c4043;
+  border-radius: 50%;
+  position: absolute;
+  right: 101px;
+  bottom: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .windows-avatars {
+    display: none;
+  }
 }
