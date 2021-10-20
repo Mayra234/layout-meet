@@ -17,7 +17,7 @@ body {
 
 @font-face {
   font-family: Roboto;
-  src: url(access/Fonts/Roboto/Roboto-Medium.ttf);
+  src: url(assets/Fonts/Roboto/Roboto-Medium.ttf);
 }
 
 .header {
@@ -36,7 +36,6 @@ body {
 .name-header {
   padding-left: 7px;
   color: white;
-
   font-family: Roboto;
   font-size: 12px;
 }
@@ -45,11 +44,11 @@ body {
   margin: 7px;
   background: #202125;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 7fr 2fr;
   gap: 5px;
 }
 
-.share-windows {
+.shared-screen {
   background: #919191;
 }
 
@@ -57,14 +56,11 @@ body {
   color: white;
   gap: 7px;
   background: #202125;
-  min-width: 300px;
-  min-height: 200px;
-
   display: grid;
   grid-template-rows: auto auto;
 }
 
-.elements-avatars {
+.element-avatar {
   font-size: 12px;
   font-family: Roboto;
   position: absolute;
@@ -73,26 +69,23 @@ body {
   align-items: center;
 }
 
-.button-microphone-1 {
+.text-avatar {
+  left: 7px;
+  bottom: 7px;
+}
+
+.avatar-button-microphone {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background: #363a3d;
-  right: 16px;
-  bottom: 280px;
+  right: 4px;
+  top: 4px;
 }
 
-.name-avatar-1 {
-  right: 191px;
-  top: 287px;
-}
-
-.name-avatar-2 {
-  right: 278px;
-  bottom: 69px;
-}
-
-.avatar-image {
+.avatar-container {
+  position: relative;
+  width: 100%;
   border-radius: 3%;
   background: #3c4043;
   display: flex;
@@ -100,7 +93,7 @@ body {
   justify-content: center;
 }
 
-.image-avatar {
+.avatar-image {
   width: 100px;
   height: 100px;
   object-fit: cover;
@@ -122,6 +115,7 @@ body {
 .buttons {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 7px;
 }
 
 .btn {
@@ -129,24 +123,13 @@ body {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.button-microphone-2 {
+.button-inactive {
   background: #e84332;
-}
-
-.button-camera {
-  background: #e84332;
-}
-
-.button-call {
-  background: #e84332;
-  border-radius: 38%;
-  width: 40px;
 }
 
 .icons {
@@ -155,16 +138,19 @@ body {
   gap: 15px;
 }
 
-.elements-footer {
+.friends-container {
+  position: relative;
+}
+
+.friends-number {
   width: 15px;
   height: 15px;
   font-size: 9px;
   background: #3c4043;
   border-radius: 50%;
   position: absolute;
-  right: 101px;
-  bottom: 40px;
-
+  right: -7px;
+  top: -12px;
   display: flex;
   justify-content: center;
   align-items: center;
