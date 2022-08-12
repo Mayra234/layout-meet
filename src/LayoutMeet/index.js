@@ -1,30 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos.css" />
-    <script src="assets\fontawesome-free-5.15.4-web\fontawesome-free-5.15.4-web\js\all.min.js"></script>
-    <title>Meet</title>
-  </head>
-  <body>
+import avatar2 from '../../image/avatar-2.jpeg';
+import avatar1 from '../../image/avatar-1.jpg';
+import image from '../../image/foto.jpg';
+
+export const LayoutMeet = () => {
+  return /*html*/ `
     <div class="header">
-      <img src="image/foto.jpg" class="image-header" />
+      <img src=${image} class="image-header" />
       <p class="name-header">Alejandra Diavanera Is presenting</p>
     </div>
     <div class="container">
       <div class="shared-screen"></div>
       <div class="windows-avatars">
         <div class="avatar-container">
-          <img src="image/avatar-1.jpg" class="avatar-image" />
+          <img src=${avatar1} class="avatar-image" />
           <p class="element-avatar text-avatar">Alejandra Diavanera</p>
         </div>
         <div class="avatar-container">
           <div class="element-avatar avatar-button-microphone">
             <i class="fas fa-microphone-slash"></i>
           </div>
-          <img src="image/avatar-2.jpeg" class="avatar-image" />
+          <img src=${avatar2} class="avatar-image" />
           <p class="element-avatar text-avatar">You</p>
         </div>
       </div>
@@ -65,5 +60,5 @@
         <i class="fas fa-shield-alt"></i>
       </div>
     </div>
-  </body>
-</html>
+    `;
+};
