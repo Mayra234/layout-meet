@@ -2,7 +2,7 @@ import React from 'react';
 import { Header } from '../../components/Header';
 import { Container } from '../../components/Container';
 import { Footer } from '../../components/Footer';
-import avatar1 from '../../../image/avatar-1.jpg';
+import avatar1 from '../../assets/image/avatar-1.jpg';
 import { Icon } from '../../components/Icon';
 import {
   faCommentDots,
@@ -18,7 +18,7 @@ import {
   faUser,
   faPrescription,
 } from '@fortawesome/free-solid-svg-icons';
-import avatar2 from '../../../image/avatar-2.jpeg';
+import avatar2 from '../../assets/image/avatar-2.jpeg';
 import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
 
 export const MainLayout = () => {
