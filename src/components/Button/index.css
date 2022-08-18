@@ -1,0 +1,19 @@
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 7px;
+}
+
+.btn {
+  background: #3c4043;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-inactive {
+  background: #e84332;
+}
