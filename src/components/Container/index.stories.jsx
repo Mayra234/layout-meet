@@ -1,9 +1,12 @@
 import React from 'react';
 import { Container } from './index';
-import avatar1 from '../../../image/avatar-1.jpg';
-import avatar2 from '../../../image/avatar-2.jpeg';
+import { Avatar } from '../Avatar';
+import { Paragraph } from '../Paragraph';
+import avatar1 from '../../assets/image/avatar-1.jpg';
+import avatar2 from '../../assets/image/avatar-2.jpeg';
 import { Icon } from '../Icon';
 import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
+import { PersonContent } from '../PersonContent';
 
 export default {
   title: 'Components/Container',
@@ -14,17 +17,22 @@ export const Overview = () => {
     <Container>
       <div className="shared-screen"></div>
       <div className="windows-avatars">
-        <div className="avatar-container">
-          <img src={avatar1} className="avatar-image" />
-          <p className="element-avatar text-avatar">Alejandra Diavanera</p>
-        </div>
-        <div className="avatar-container">
-          <div className="element-avatar avatar-button-microphone">
-            <Icon icon={faMicrophone} />
-          </div>
-          <img src={avatar2} className="avatar-image" />
-          <p className="element-avatar text-avatar">You</p>
-        </div>
+        <PersonContent>
+          <Avatar image={avatar1} className="avatar-image" />
+          <Paragraph className="element-avatar text-avatar">
+            Alejandra Diavanera
+          </Paragraph>
+        </PersonContent>
+        <PersonContent>
+          <Icon
+            icon={faMicrophone}
+            className="element-avatar avatar-button-microphone"
+          />
+          <Avatar image={avatar2} className="avatar-image" />
+          <Paragraph className="element-avatar text-avatar">
+            Mauricio Rivera
+          </Paragraph>
+        </PersonContent>
       </div>
     </Container>
   );
