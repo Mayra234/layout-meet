@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from './index';
-import avatar1 from '../../../image/avatar-1.jpg';
+import avatar1 from '../../assets/image/avatar-1.jpg';
 
 export default {
   title: 'Components/Header',
