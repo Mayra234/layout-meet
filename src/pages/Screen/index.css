@@ -1,0 +1,56 @@
+.shared-screen {
+  background: #919191;
+}
+
+.windows-avatars {
+  gap: 7px;
+  background: #202125;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.element-avatar {
+  font-size: 12px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-avatar {
+  left: 7px;
+  bottom: 7px;
+}
+
+.avatar-button-microphone {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #363a3d;
+  right: 4px;
+  top: 4px;
+}
+
+.avatar-container {
+  position: relative;
+  width: 100%;
+  border-radius: 3%;
+  background: #3c4043;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-image {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.element-avatar {
+  position: absolute;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
