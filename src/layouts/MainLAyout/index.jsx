@@ -19,8 +19,6 @@ import {
   faUser,
   faPrescription,
 } from '@fortawesome/free-solid-svg-icons';
-import avatar2 from '../../assets/image/avatar-2.jpeg';
-import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
 import { Avatar } from '../../components/Avatar';
 import { Paragraph } from '../../components/Paragraph';
 
