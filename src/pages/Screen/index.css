@@ -40,17 +40,3 @@
   align-items: center;
   justify-content: center;
 }
-
-.avatar-image {
-  position: absolute;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.element-avatar {
-  position: absolute;
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
