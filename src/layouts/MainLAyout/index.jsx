@@ -1,6 +1,7 @@
 import React from 'react';
+import './index.css';
 import { Header } from '../../components/Header';
-import { Container } from '../../components/Container';
+import { Button } from '../../components/Button';
 import { Footer } from '../../components/Footer';
 import avatar1 from '../../assets/image/avatar-1.jpg';
 import { Icon } from '../../components/Icon';
@@ -20,56 +21,31 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import avatar2 from '../../assets/image/avatar-2.jpeg';
 import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
+import { Avatar } from '../../components/Avatar';
+import { Paragraph } from '../../components/Paragraph';
 
-export const MainLayout = () => {
+export const MainLayout = ({ children = '' }) => {
   return (
     <>
       <Header>
-        <img src={avatar1} className="image-header" />
-        <p className="name-header">Alejandra Diavanera Is presenting</p>
+        <Avatar palette="primary" image={avatar1} />
+        <Paragraph className="name-header">
+          Alejandra Diavanera Is presenting
+        </Paragraph>
       </Header>
-      <Container>
-        <div className="shared-screen"></div>
-        <div className="windows-avatars">
-          <div className="avatar-container">
-            <img src={avatar1} className="avatar-image" />
-            <p className="element-avatar text-avatar">Alejandra Diavanera</p>
-          </div>
-          <div className="avatar-container">
-            <div className="element-avatar avatar-button-microphone">
-              <Icon icon={faMicrophone} />
-            </div>
-            <img src={avatar2} className="avatar-image" />
-            <p className="element-avatar text-avatar">You</p>
-          </div>
-        </div>
-      </Container>
+      {children}
       <Footer>
-        <div className="hour">
+        <Paragraph>
           2:19 PM {'&'}nbsp | {'&'}nbsp mbm-tuvb-ohm
-        </div>
+        </Paragraph>
         <div className="buttons">
-          <div className="btn button-inactive">
-            <Icon icon={faMicrophoneSlash} />
-          </div>
-          <div className="btn button-inactive">
-            <Icon icon={faVideoSlash} />
-          </div>
-          <div className="btn">
-            <Icon icon={faClosedCaptioning} />
-          </div>
-          <div className="btn">
-            <Icon icon={faHandPaper} />
-          </div>
-          <div className="btn">
-            <Icon icon={faPrescription} />
-          </div>
-          <div className="btn">
-            <Icon icon={faEllipsisV} />
-          </div>
-          <div className="btn button-inactive">
-            <Icon icon={faPhoneSlash} />
-          </div>
+          <Button icon={faMicrophoneSlash} />
+          <Button icon={faVideoSlash} />
+          <Button palette="primary" icon={faClosedCaptioning} />
+          <Button palette="primary" icon={faHandPaper} />
+          <Button palette="primary" icon={faPrescription} />
+          <Button palette="primary" icon={faEllipsisV} />
+          <Button icon={faPhoneSlash} />
         </div>
         <div className="icons">
           <Icon icon={faInfoCircle} />
