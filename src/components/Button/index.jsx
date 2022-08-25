@@ -4,6 +4,7 @@ import './index.css';
 
 export const Button = ({
   icon = '',
+  id = '',
   className = '',
   palette = 'secondary',
   type = 'button',
@@ -26,6 +27,7 @@ export const Button = ({
 
   return (
     <button
+      id={id}
       style={style}
       onClick={onClick}
       palette={palette}

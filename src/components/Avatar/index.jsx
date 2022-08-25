@@ -19,8 +19,8 @@ export const Avatar = ({
     } else if (palette === 'secondary') {
       setStyle((prevStyle) => ({
         ...prevStyle,
-        maxWidth: '100px',
-        maxHeight: '100px',
+        mixWidth: '100px',
+        mixHeight: '100px',
       }));
     }
   };

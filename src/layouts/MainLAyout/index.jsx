@@ -11,13 +11,11 @@ import {
   faShieldAlt,
   faMicrophoneSlash,
   faVideoSlash,
-  faClosedCaptioning,
-  faHandPaper,
   faEllipsisV,
-  faPhoneSlash,
   faInfoCircle,
   faUser,
-  faPrescription,
+  faPhoneFlip,
+  faArrowUpRightFromSquare,
 } from '@fortawesome/free-solid-svg-icons';
 import { Avatar } from '../../components/Avatar';
 import { Paragraph } from '../../components/Paragraph';
@@ -33,17 +31,13 @@ export const MainLayout = ({ children = '' }) => {
       </Header>
       {children}
       <Footer>
-        <Paragraph>
-          2:19 PM {'&'}nbsp | {'&'}nbsp mbm-tuvb-ohm
-        </Paragraph>
+        <Paragraph id="text-footer">2:19 PM | mbm-tuvb-ohm</Paragraph>
         <div className="buttons">
           <Button icon={faMicrophoneSlash} />
           <Button icon={faVideoSlash} />
-          <Button palette="primary" icon={faClosedCaptioning} />
-          <Button palette="primary" icon={faHandPaper} />
-          <Button palette="primary" icon={faPrescription} />
+          <Button palette="primary" icon={faArrowUpRightFromSquare} />
           <Button palette="primary" icon={faEllipsisV} />
-          <Button icon={faPhoneSlash} />
+          <Button id="call-ended" icon={faPhoneFlip} />
         </div>
         <div className="icons">
           <Icon icon={faInfoCircle} />
