@@ -22,7 +22,7 @@ import { Paragraph } from '../../components/Paragraph';
 
 export const MainLayout = ({ children = '' }) => {
   return (
-    <>
+    <div>
       <Header>
         <Avatar palette="primary" image={avatar1} />
         <Paragraph className="name-header">
@@ -50,6 +50,6 @@ export const MainLayout = ({ children = '' }) => {
           <Icon icon={faShieldAlt} />
         </div>
       </Footer>
-    </>
+    </div>
   );
 };

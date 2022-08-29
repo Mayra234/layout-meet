@@ -38,6 +38,7 @@
 
 @media (max-width: 768px) {
   .windows-avatars {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +49,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .windows-avatars {
     display: flex;
     justify-content: center;

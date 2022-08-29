@@ -13,3 +13,17 @@
     padding: 10px;
   }
 }
+
+@media (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    margin: -2px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer {
+    margin: -12px;
+    gap: 12px;
+  }
+}
